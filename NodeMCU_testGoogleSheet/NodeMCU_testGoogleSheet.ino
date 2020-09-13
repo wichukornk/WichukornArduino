@@ -3,18 +3,18 @@
 #include <ESP8266HTTPClient.h>
 
 //ตั้งค่า wifi
-const char* ssid = ""; // ชื่อ
-const char* password = ""; // รหัสผ่าน
+const char* ssid = "3BB_Noomoriginal_2.4GHz"; // ชื่อ
+const char* password = "27022528"; // รหัสผ่าน
 
 
 // ตั้งค่า IFTTT
-String event = "test"; // ชื่อ event
-String key = "cd86zJCvok4e2-kXzGtrk"; // Key
+String event = "wichukorn_test_1"; // ชื่อ event
+String key = "iy0EVpMncnVRJ6COgjMGJPNFLtqhcGZv3lUGBlXBoSR"; // Key
 
 String sheets = "";
 void setup () {
   //สำหรับ esp8266 url ตรง https ให้เปลี่ยนเป็น http
-  sheets = "http://maker.ifttt.com/trigger/test/with/key/cd86zJCvok4e2-kXzGtrkw?value1=123"; // url ที่ส่งค่าลง google sheet
+  sheets = "http://maker.ifttt.com/trigger/wichukorn_test_1/with/key/iy0EVpMncnVRJ6COgjMGJPNFLtqhcGZv3lUGBlXBoSR?value1=123"; // url ที่ส่งค่าลง google sheet
 
   Serial.begin(115200);
   Serial.println(sheets);
